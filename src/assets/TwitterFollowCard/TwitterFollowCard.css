@@ -1,0 +1,75 @@
+:root{
+    --blanco: #eff3f4;
+    --celeste: #1d9bf0;
+    --rojo: #f42122;
+    --gris: #909599;
+    --gris-claro: #c9cbcc;
+}
+.dp-follow-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 360px;
+    padding: 5px;
+    transition: 0.5s ease-in-out;
+}
+.dp-header-user {
+    display: flex;
+}
+.dp-header-user div {
+    display: flex;
+    flex-direction: column;
+    color: var(--blanco);
+    margin-left: 5px;
+    justify-content: center;
+} 
+.tw-following-text{
+    display: block;
+}
+.dp-name-tw {
+    font-size: 14px;
+}
+.dp-user-tw {
+    font-size: 14px;
+    color: var(--gris);
+    font-weight: 600;
+}
+.dp-avatar-tw {
+    width: 45px;
+    height: 45px;
+}
+.button-follow {
+    background-color: var(--blanco);
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.button-follow:hover {
+    background-color: var(--gris-claro);
+}
+.button-follow--is-following {
+    background-color: transparent;
+    color: var(--blanco);
+    border: solid .5px var(--gris);
+    margin-left: 20px;
+    width: 160px;
+}
+.button-follow--is-following:hover {
+    color: var(--rojo);
+    background-color: #f421211a;
+    border: solid .3px var(--rojo);
+}
+.tw-following-stopFollowing {
+    display: none;
+}
+.button-follow--is-following:hover .tw-following-text {
+    display: none;
+}
+.button-follow--is-following:hover .tw-following-stopFollowing {
+    display: block;
+}

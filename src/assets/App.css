@@ -1,0 +1,6 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+    /* gap: 10px; */
+}
